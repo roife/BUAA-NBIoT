@@ -1,0 +1,497 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		320223BF2753A41A00D5AAEC /* DeviceBindingVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320223BE2753A41A00D5AAEC /* DeviceBindingVM.swift */; };
+		324B7D8E275001C900D96624 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 324B7D8D275001C900D96624 /* SwiftUICharts */; };
+		324B7D90275008FE00D96624 /* ChartCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324B7D8F275008FE00D96624 /* ChartCard.swift */; };
+		324B7D922750925300D96624 /* StatusPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324B7D912750925300D96624 /* StatusPanel.swift */; };
+		324B7D97275092BC00D96624 /* ChartPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324B7D96275092BC00D96624 /* ChartPanel.swift */; };
+		326D6DD6274FDA3C004743F3 /* DevicePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326D6DD5274FDA3C004743F3 /* DevicePage.swift */; };
+		326D6DE1274FDE03004743F3 /* StatusCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326D6DE0274FDE03004743F3 /* StatusCard.swift */; };
+		329DBF732753430100F3FD56 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 329DBF722753430100F3FD56 /* Alamofire */; };
+		329DBF7527535E9300F3FD56 /* DeviceVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329DBF7427535E9300F3FD56 /* DeviceVM.swift */; };
+		329DBF77275365A800F3FD56 /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329DBF76275365A800F3FD56 /* DataStorage.swift */; };
+		32B6E4902751660700C1A42F /* APIiot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B6E48F2751660700C1A42F /* APIiot.swift */; };
+		32B6E49227516A2900C1A42F /* DataFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B6E49127516A2900C1A42F /* DataFormatter.swift */; };
+		32C433AB274FD3D7006145BB /* NBIoTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C433AA274FD3D7006145BB /* NBIoTApp.swift */; };
+		32C433AD274FD3D7006145BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C433AC274FD3D7006145BB /* ContentView.swift */; };
+		32C433AF274FD3D8006145BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32C433AE274FD3D8006145BB /* Assets.xcassets */; };
+		32C433B2274FD3D8006145BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32C433B1274FD3D8006145BB /* Preview Assets.xcassets */; };
+		32F3F3F02750B1C40000026F /* DataTablePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F3F3EF2750B1C40000026F /* DataTablePage.swift */; };
+		32F3F3F22750BFB00000026F /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F3F3F12750BFB00000026F /* MainMenu.swift */; };
+		32F3F3F52750C0400000026F /* RecordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F3F3F42750C0400000026F /* RecordModel.swift */; };
+		32F3F3F72750C2560000026F /* DeviceInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F3F3F62750C2560000026F /* DeviceInfoModel.swift */; };
+		32F3F3F92750C7E00000026F /* DeviceBindingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F3F3F82750C7E00000026F /* DeviceBindingPage.swift */; };
+		32F3F4012750D9190000026F /* DeviceStatusIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F3F4002750D9190000026F /* DeviceStatusIndicator.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		320223BE2753A41A00D5AAEC /* DeviceBindingVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceBindingVM.swift; sourceTree = "<group>"; };
+		324B7D8F275008FE00D96624 /* ChartCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartCard.swift; sourceTree = "<group>"; };
+		324B7D912750925300D96624 /* StatusPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusPanel.swift; sourceTree = "<group>"; };
+		324B7D96275092BC00D96624 /* ChartPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartPanel.swift; sourceTree = "<group>"; };
+		326D6DD5274FDA3C004743F3 /* DevicePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicePage.swift; sourceTree = "<group>"; };
+		326D6DE0274FDE03004743F3 /* StatusCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusCard.swift; sourceTree = "<group>"; };
+		329DBF7427535E9300F3FD56 /* DeviceVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceVM.swift; sourceTree = "<group>"; };
+		329DBF76275365A800F3FD56 /* DataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorage.swift; sourceTree = "<group>"; };
+		32B6E48F2751660700C1A42F /* APIiot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIiot.swift; sourceTree = "<group>"; };
+		32B6E49127516A2900C1A42F /* DataFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFormatter.swift; sourceTree = "<group>"; };
+		32C433A7274FD3D7006145BB /* BUAA-NBIoT21-13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BUAA-NBIoT21-13.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		32C433AA274FD3D7006145BB /* NBIoTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBIoTApp.swift; sourceTree = "<group>"; };
+		32C433AC274FD3D7006145BB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		32C433AE274FD3D8006145BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		32C433B1274FD3D8006145BB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		32C433B3274FD3D8006145BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32F3F3EF2750B1C40000026F /* DataTablePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTablePage.swift; sourceTree = "<group>"; };
+		32F3F3F12750BFB00000026F /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
+		32F3F3F42750C0400000026F /* RecordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordModel.swift; sourceTree = "<group>"; };
+		32F3F3F62750C2560000026F /* DeviceInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfoModel.swift; sourceTree = "<group>"; };
+		32F3F3F82750C7E00000026F /* DeviceBindingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceBindingPage.swift; sourceTree = "<group>"; };
+		32F3F4002750D9190000026F /* DeviceStatusIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceStatusIndicator.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		32C433A4274FD3D7006145BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				324B7D8E275001C900D96624 /* SwiftUICharts in Frameworks */,
+				329DBF732753430100F3FD56 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		324B7D95275092A900D96624 /* Panels */ = {
+			isa = PBXGroup;
+			children = (
+				324B7D912750925300D96624 /* StatusPanel.swift */,
+				324B7D96275092BC00D96624 /* ChartPanel.swift */,
+			);
+			path = Panels;
+			sourceTree = "<group>";
+		};
+		326D6DD4274FDA20004743F3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				326D6DDC274FDDC0004743F3 /* Components */,
+				329DBF7827536F4D00F3FD56 /* Pages */,
+				324B7D95275092A900D96624 /* Panels */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		326D6DDC274FDDC0004743F3 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				32F3F3F12750BFB00000026F /* MainMenu.swift */,
+				324B7D8F275008FE00D96624 /* ChartCard.swift */,
+				326D6DE0274FDE03004743F3 /* StatusCard.swift */,
+				32F3F4002750D9190000026F /* DeviceStatusIndicator.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		329DBF7827536F4D00F3FD56 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				32F3F3F82750C7E00000026F /* DeviceBindingPage.swift */,
+				32F3F3EF2750B1C40000026F /* DataTablePage.swift */,
+				326D6DD5274FDA3C004743F3 /* DevicePage.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		32B6E48E275165E600C1A42F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				32B6E48F2751660700C1A42F /* APIiot.swift */,
+				32B6E49127516A2900C1A42F /* DataFormatter.swift */,
+				329DBF76275365A800F3FD56 /* DataStorage.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		32C4339E274FD3D7006145BB = {
+			isa = PBXGroup;
+			children = (
+				32C433A9274FD3D7006145BB /* BUAA-NBIoT21-13 */,
+				32C433A8274FD3D7006145BB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		32C433A8274FD3D7006145BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32C433A7274FD3D7006145BB /* BUAA-NBIoT21-13.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32C433A9274FD3D7006145BB /* BUAA-NBIoT21-13 */ = {
+			isa = PBXGroup;
+			children = (
+				32B6E48E275165E600C1A42F /* Helpers */,
+				32F3F3FA2750CB050000026F /* ViewModels */,
+				32F3F3F32750C0330000026F /* Models */,
+				326D6DD4274FDA20004743F3 /* Views */,
+				32C433AA274FD3D7006145BB /* NBIoTApp.swift */,
+				32C433AC274FD3D7006145BB /* ContentView.swift */,
+				32C433AE274FD3D8006145BB /* Assets.xcassets */,
+				32C433B3274FD3D8006145BB /* Info.plist */,
+				32C433B0274FD3D8006145BB /* Preview Content */,
+			);
+			path = "BUAA-NBIoT21-13";
+			sourceTree = "<group>";
+		};
+		32C433B0274FD3D8006145BB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				32C433B1274FD3D8006145BB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		32F3F3F32750C0330000026F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				32F3F3F42750C0400000026F /* RecordModel.swift */,
+				32F3F3F62750C2560000026F /* DeviceInfoModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		32F3F3FA2750CB050000026F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				329DBF7427535E9300F3FD56 /* DeviceVM.swift */,
+				320223BE2753A41A00D5AAEC /* DeviceBindingVM.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		32C433A6274FD3D7006145BB /* BUAA-NBIoT21-13 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32C433B6274FD3D8006145BB /* Build configuration list for PBXNativeTarget "BUAA-NBIoT21-13" */;
+			buildPhases = (
+				32C433A3274FD3D7006145BB /* Sources */,
+				32C433A4274FD3D7006145BB /* Frameworks */,
+				32C433A5274FD3D7006145BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BUAA-NBIoT21-13";
+			packageProductDependencies = (
+				324B7D8D275001C900D96624 /* SwiftUICharts */,
+				329DBF722753430100F3FD56 /* Alamofire */,
+			);
+			productName = "BUAA-NBIoT21-13";
+			productReference = 32C433A7274FD3D7006145BB /* BUAA-NBIoT21-13.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		32C4339F274FD3D7006145BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					32C433A6274FD3D7006145BB = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = 32C433A2274FD3D7006145BB /* Build configuration list for PBXProject "BUAA-NBIoT21-13" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 32C4339E274FD3D7006145BB;
+			packageReferences = (
+				324B7D8C275001C900D96624 /* XCRemoteSwiftPackageReference "ChartView" */,
+				329DBF712753430100F3FD56 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = 32C433A8274FD3D7006145BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				32C433A6274FD3D7006145BB /* BUAA-NBIoT21-13 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		32C433A5274FD3D7006145BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32C433B2274FD3D8006145BB /* Preview Assets.xcassets in Resources */,
+				32C433AF274FD3D8006145BB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32C433A3274FD3D7006145BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32F3F3F72750C2560000026F /* DeviceInfoModel.swift in Sources */,
+				324B7D922750925300D96624 /* StatusPanel.swift in Sources */,
+				320223BF2753A41A00D5AAEC /* DeviceBindingVM.swift in Sources */,
+				32C433AD274FD3D7006145BB /* ContentView.swift in Sources */,
+				329DBF77275365A800F3FD56 /* DataStorage.swift in Sources */,
+				32B6E49227516A2900C1A42F /* DataFormatter.swift in Sources */,
+				32F3F3F52750C0400000026F /* RecordModel.swift in Sources */,
+				32F3F4012750D9190000026F /* DeviceStatusIndicator.swift in Sources */,
+				32C433AB274FD3D7006145BB /* NBIoTApp.swift in Sources */,
+				324B7D90275008FE00D96624 /* ChartCard.swift in Sources */,
+				32F3F3F02750B1C40000026F /* DataTablePage.swift in Sources */,
+				32B6E4902751660700C1A42F /* APIiot.swift in Sources */,
+				326D6DE1274FDE03004743F3 /* StatusCard.swift in Sources */,
+				32F3F3F22750BFB00000026F /* MainMenu.swift in Sources */,
+				329DBF7527535E9300F3FD56 /* DeviceVM.swift in Sources */,
+				32F3F3F92750C7E00000026F /* DeviceBindingPage.swift in Sources */,
+				326D6DD6274FDA3C004743F3 /* DevicePage.swift in Sources */,
+				324B7D97275092BC00D96624 /* ChartPanel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		32C433B4274FD3D8006145BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		32C433B5274FD3D8006145BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		32C433B7274FD3D8006145BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"BUAA-NBIoT21-13/Preview Content\"";
+				DEVELOPMENT_TEAM = 9223UXXW46;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "BUAA-NBIoT21-13/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "roife.BUAA-NBIoT21-13";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		32C433B8274FD3D8006145BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"BUAA-NBIoT21-13/Preview Content\"";
+				DEVELOPMENT_TEAM = 9223UXXW46;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "BUAA-NBIoT21-13/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "roife.BUAA-NBIoT21-13";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		32C433A2274FD3D7006145BB /* Build configuration list for PBXProject "BUAA-NBIoT21-13" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32C433B4274FD3D8006145BB /* Debug */,
+				32C433B5274FD3D8006145BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32C433B6274FD3D8006145BB /* Build configuration list for PBXNativeTarget "BUAA-NBIoT21-13" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32C433B7274FD3D8006145BB /* Debug */,
+				32C433B8274FD3D8006145BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		324B7D8C275001C900D96624 /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = exactVersion;
+				version = "2.0.0-beta.2";
+			};
+		};
+		329DBF712753430100F3FD56 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		324B7D8D275001C900D96624 /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 324B7D8C275001C900D96624 /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+		329DBF722753430100F3FD56 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 329DBF712753430100F3FD56 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 32C4339F274FD3D7006145BB /* Project object */;
+}
