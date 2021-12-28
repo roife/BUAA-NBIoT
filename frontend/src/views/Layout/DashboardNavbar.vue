@@ -29,6 +29,11 @@
             <span>{{ this.record.motor === 0 ? "发送警报" : "停止警报" }}</span>
           </b-dropdown-item>
 
+          <b-dropdown-item href="#" v-b-modal.modal-critical-temperature>
+            <i class="ni ni-sound-wave"></i>
+            <span>设置报警温度</span>
+          </b-dropdown-item>
+
           <div class="dropdown-divider"></div>
 
           <b-dropdown-item href="#" v-b-modal.modal-register>
@@ -41,7 +46,7 @@
     </b-navbar-nav>
 
     <b-modal id="modal-register" hide-footer title="绑定新设备">
-      <b-form @submit="onSubmit">
+      <b-form @submit="onCriticalTemperatureSubmit">
         <b-form-group id="input-group-app_key" label="AppKey" label-for="input-app_key">
             <b-form-input
                 id="input-app_key"
@@ -86,6 +91,21 @@
                 required
             ></b-form-input>
         </b-form-group>
+        <b-button type="submit" variant="primary">Submit</b-button>
+      </b-form>
+    </b-modal>
+
+    <b-modal id="modal-critical-temperature" hide-footer title="设置报警温度">
+      <b-form @submit="onSubmit">
+        <b-form-group id="input-group-critical-temperature" label="报警温度" label-for="input-critical-temperature">
+            <b-form-input
+                id="input-critical-temperature"
+                v-model="critical_temperature_form.critical_temperature"
+                placeholder="50"
+                required
+            ></b-form-input>
+        </b-form-group>
+
         <b-button type="submit" variant="primary">Submit</b-button>
       </b-form>
     </b-modal>
@@ -141,6 +161,10 @@ export default {
         device_id: '',
       },
 
+      critical_temperature_form: {
+        critical_temperature: 50,
+      },
+
       // API
       base_url: "http://49.232.173.163:19373",
 
@@ -178,6 +202,16 @@ export default {
       localStorage.setItem("product_id", this.product_id);
       localStorage.setItem("device_id", this.device_id);
       localStorage.setItem("device_name", this.device_name);
+    },
+    onCriticalTemperatureSubmit() {
+      let body = {
+        critical_temperature: this.critical_temperature_form.critical_temperature,
+      };
+      axios.put(`${this.base_url}/devices/${this.id}/critical_temperature`, body)
+        .then(_ => {
+          window.location.reload();
+        })
+        .catch(err => console.log(err));
     },
     onSubmit() {
       let body = {
