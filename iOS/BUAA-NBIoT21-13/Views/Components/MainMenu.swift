@@ -19,6 +19,7 @@ struct MainMenu: View {
                 } label: {
                     Label("查看所有数据", systemImage: "tablecells.badge.ellipsis")
                 }
+                .disabled(device.deviceStatus == .unconnected)
                 
                 Button() {
                     switch device.deviceStatus {
@@ -31,6 +32,13 @@ struct MainMenu: View {
                     }
                 } label: {
                     Label(device.deviceStatus == .warning ? "停止警报" : "开启警报", systemImage: "bell")
+                }
+                .disabled(device.deviceStatus == .unconnected)
+                
+                Button() {
+                    self.activeSheet = .temperatureSetting
+                } label: {
+                    Label("修改报警温度", systemImage: "thermometer")
                 }
                 .disabled(device.deviceStatus == .unconnected)
             }

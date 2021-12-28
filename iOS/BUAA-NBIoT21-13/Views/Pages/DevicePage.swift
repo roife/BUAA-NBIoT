@@ -8,7 +8,7 @@
 import SwiftUI
 
 enum ActiveSheet: Identifiable {
-    case deviceBiding, dataTable
+    case deviceBiding, dataTable, temperatureSetting
     
     var id: Int {
         hashValue
@@ -43,6 +43,8 @@ struct DevicePage: View {
                 DeviceBindingPage(activeSheet: $activeSheet)
             case .dataTable:
                 DataTablePage()
+            case .temperatureSetting:
+                TemperatureSetting()
             }
         }
     }

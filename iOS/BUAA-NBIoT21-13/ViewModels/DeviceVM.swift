@@ -56,7 +56,10 @@ class DeviceVM: ObservableObject {
             case let .failure(err):
                 print(err)
             case let .success(data):
-                if let records = try? APIiot.decoder.decode([RecordModel].self, from: data!) {
+                guard let data = data else {
+                    return
+                }
+                if let records = try? APIiot.decoder.decode([RecordModel].self, from: data) {
                     self.records = records
                 }
             }
@@ -91,6 +94,26 @@ class DeviceVM: ObservableObject {
                 print(err)
             case .success(_):
                 break
+            }
+        }
+    }
+    
+    func setTemperature(temperature: String) {
+        guard let deviceInfo = self.deviceInfo else {
+            return
+        }
+        
+        guard let temperature = Int(temperature) else {
+            return
+        }
+        
+        let req = APIiot.setTemperature(id: deviceInfo.id, temperature: temperature)
+        req.response { res in
+            switch res.result {
+            case let .failure(err):
+                print(err)
+            case let .success(data):
+                print(data)
             }
         }
     }

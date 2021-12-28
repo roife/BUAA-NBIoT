@@ -27,6 +27,18 @@ struct APIiot {
         return AF.request(url, method: .get, parameters: params)
     }
     
+    static func setTemperature(id: Int, temperature: Int) -> DataRequest {
+        let path = "/devices/\(id)/critical_temperature"
+        let url = host + path
+        
+        let params: [String: Int] = [
+            "critical_temperature": temperature,
+        ]
+        
+        let req = AF.request(url, method: .put, parameters: params, encoding: JSONEncoding.default)
+        return req
+    }
+    
     static func startWarning(id: Int) -> DataRequest {
         let path = "/devices/\(id)/warning"
         let url = host + path

@@ -14,6 +14,7 @@
 		324B7D97275092BC00D96624 /* ChartPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324B7D96275092BC00D96624 /* ChartPanel.swift */; };
 		326D6DD6274FDA3C004743F3 /* DevicePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326D6DD5274FDA3C004743F3 /* DevicePage.swift */; };
 		326D6DE1274FDE03004743F3 /* StatusCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326D6DE0274FDE03004743F3 /* StatusCard.swift */; };
+		328C6118277B11DD00882036 /* TemperatureSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328C6117277B11DD00882036 /* TemperatureSetting.swift */; };
 		329DBF732753430100F3FD56 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 329DBF722753430100F3FD56 /* Alamofire */; };
 		329DBF7527535E9300F3FD56 /* DeviceVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329DBF7427535E9300F3FD56 /* DeviceVM.swift */; };
 		329DBF77275365A800F3FD56 /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329DBF76275365A800F3FD56 /* DataStorage.swift */; };
@@ -38,6 +39,7 @@
 		324B7D96275092BC00D96624 /* ChartPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartPanel.swift; sourceTree = "<group>"; };
 		326D6DD5274FDA3C004743F3 /* DevicePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicePage.swift; sourceTree = "<group>"; };
 		326D6DE0274FDE03004743F3 /* StatusCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusCard.swift; sourceTree = "<group>"; };
+		328C6117277B11DD00882036 /* TemperatureSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureSetting.swift; sourceTree = "<group>"; };
 		329DBF7427535E9300F3FD56 /* DeviceVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceVM.swift; sourceTree = "<group>"; };
 		329DBF76275365A800F3FD56 /* DataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorage.swift; sourceTree = "<group>"; };
 		32B6E48F2751660700C1A42F /* APIiot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIiot.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				32F3F3F82750C7E00000026F /* DeviceBindingPage.swift */,
 				32F3F3EF2750B1C40000026F /* DataTablePage.swift */,
 				326D6DD5274FDA3C004743F3 /* DevicePage.swift */,
+				328C6117277B11DD00882036 /* TemperatureSetting.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32F3F3F72750C2560000026F /* DeviceInfoModel.swift in Sources */,
+				328C6118277B11DD00882036 /* TemperatureSetting.swift in Sources */,
 				324B7D922750925300D96624 /* StatusPanel.swift in Sources */,
 				320223BF2753A41A00D5AAEC /* DeviceBindingVM.swift in Sources */,
 				32C433AD274FD3D7006145BB /* ContentView.swift in Sources */,
