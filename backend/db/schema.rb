@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(version: 2021_11_27_031343) do
     t.integer "product_id"
     t.string "device_id"
     t.string "device_name"
+    t.integer "critical_temperature", default: 50, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

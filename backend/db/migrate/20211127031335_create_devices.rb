@@ -7,6 +7,7 @@ class CreateDevices < ActiveRecord::Migration[5.2]
       t.integer :product_id
       t.string :device_id
       t.string :device_name
+      t.integer :critical_temperature, null: false, default: 50
 
       t.timestamps
     end

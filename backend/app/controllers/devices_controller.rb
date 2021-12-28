@@ -54,6 +54,12 @@ class DevicesController < ApplicationController
     render json: @device.records.last(params[:record_num])
   end
 
+  # PUT /devices/1/critical_temperature
+  def change_critical_temperature
+    @device.update({:critical_temperature => device_params[:critical_temperature]})
+    render json: @device, status: :updated, location: @device
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_device
@@ -62,6 +68,6 @@ class DevicesController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def device_params
-      params.require(:device).permit(:app_key, :app_secret, :master_key, :product_id, :device_id)
+      params.require(:device).permit(:app_key, :app_secret, :master_key, :product_id, :device_id, :critical_temperature)
     end
 end
