@@ -46,7 +46,7 @@
     </b-navbar-nav>
 
     <b-modal id="modal-register" hide-footer title="绑定新设备">
-      <b-form @submit="onCriticalTemperatureSubmit">
+      <b-form @submit="onSubmit">
         <b-form-group id="input-group-app_key" label="AppKey" label-for="input-app_key">
             <b-form-input
                 id="input-app_key"
@@ -96,7 +96,7 @@
     </b-modal>
 
     <b-modal id="modal-critical-temperature" hide-footer title="设置报警温度">
-      <b-form @submit="onSubmit">
+      <b-form @submit="onCriticalTemperatureSubmit">
         <b-form-group id="input-group-critical-temperature" label="报警温度" label-for="input-critical-temperature">
             <b-form-input
                 id="input-critical-temperature"

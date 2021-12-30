@@ -166,7 +166,7 @@
 
       fetchRecords() {
         if (this.id !== null) {
-          axios.get(`${this.base_url}/devices/${this.id}/records`, { params: { "record_num": 40 } })
+          axios.get(`${this.base_url}/devices/1/records`, { params: { "record_num": 40 } })
             .then(res => {
               this.records = res.data;
               this.updateChartData();
